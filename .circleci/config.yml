@@ -4,7 +4,7 @@ image_config: &image_config
   # either as project-specific environment variables
   # or as resources in your organization's org-global Context
 
-  IMAGE_NAME: botx-ros-image
+  IMAGE_NAME: desktop-ros-docker-image
 
   IMAGE_TAG: kinetic
 
@@ -36,7 +36,7 @@ jobs:
 
   test_image:
     docker:
-      - image: tianhaoz95/botx-ros-image:kinetic
+      - image: tianhaoz95/desktop-ros-docker-image:kinetic
         environment:
           <<: *image_config
 
