@@ -5,6 +5,9 @@ FROM ubuntu:xenial
 # first update anyway
 RUN apt-get update
 
+# install lsb_release
+RUN apt-get install -y lsb-release 
+
 # install pip3
 RUN apt-get install -y python3-pip
 
