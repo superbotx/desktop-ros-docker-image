@@ -44,3 +44,9 @@ RUN apt-get install -y python-rosinstall
 RUN apt-get install -y python-rosinstall-generator
 RUN apt-get install -y python-wstool
 RUN apt-get install -y build-essential
+
+# install moveit
+RUN apt-get install -y ros-kinetic-moveit
+
+# source bashrc file
+RUN /bin/bash -c "source ~/.bashrc"
