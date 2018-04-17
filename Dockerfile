@@ -48,5 +48,8 @@ RUN apt-get install -y build-essential
 # install moveit
 RUN apt-get install -y ros-kinetic-moveit
 
+# install rosbridge
+RUN apt-get install -y ros-kinetic-rosbridge-server
+
 # source bashrc file
 RUN /bin/bash -c "source ~/.bashrc"
