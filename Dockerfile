@@ -5,6 +5,9 @@ FROM ubuntu:xenial
 # first update anyway
 RUN apt-get update
 
+# install apt-utils
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
+
 # install pip3
 RUN apt-get install -y python3-pip
 
